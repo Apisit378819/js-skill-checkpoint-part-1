@@ -18,6 +18,8 @@ const products = [
 ];
 
 const promotionCode = "";
+const promotionCodeSALE20 = "SALE20";
+const promotionCodeSALE50 = "SALE50";
 // เริ่มเขียนโค้ดตรงนี้
 function calculateTotalPrice(products, promotionCode) {
   let totalPrice = 0
@@ -33,11 +35,6 @@ function calculateTotalPrice(products, promotionCode) {
   return totalPrice
 }
 
-const promotionCode1 = "";
-console.log(calculateTotalPrice(products, promotionCode1))
-
-const promotionCode2 = "SALE20";
-console.log(calculateTotalPrice(products, promotionCode2))
-
-const promotionCode3 = "SALE50";
-console.log(calculateTotalPrice(products, promotionCode3))
+console.log(calculateTotalPrice(products, promotionCode))
+console.log(calculateTotalPrice(products, promotionCodeSALE20))
+console.log(calculateTotalPrice(products, promotionCodeSALE50))
